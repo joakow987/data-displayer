@@ -1,0 +1,113 @@
+@import "../index.css"; 
+
+.country-details {
+  display: grid;
+  grid-gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.country-details .details {
+  display: flex;
+  justify-content: space-around;
+}
+
+.country-details .details svg {
+  width: 24px;
+  height: 24px;
+}
+
+.country-details .details .detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.country-details .details .detail .value { 
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.country-details .title-container {
+  word-wrap: break-word;
+  overflow: hidden;
+  text-align: center;
+}
+
+.country-details .title-container .label{
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.country-details .title-container .title {
+  font-size: 15px;
+  color: white;
+  background-color: var(--dark-blue-color);;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  line-height: 30px;
+}
+
+@media only screen and (min-width: 800px) {
+  .country-details {
+    grid-template-columns:5fr 3fr;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .country-details .details .detail .value{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  
+  .country-details .actions p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .country-details .details .detail .value{
+    margin-top: 5px;
+  }
+
+  .country-details .details .detail p{
+    margin: 15px 0;
+  }
+
+  .country-details .details img {
+    width: 30px;
+  }
+  
+  .country-details .title-container .title {
+    border-radius: 10px;
+    -webkit-line-clamp: 1;
+    line-height: 33px;
+  }
+
+  .country-details .title-container .label{
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .country-details .details {
+    font-size: 12px;
+    flex-direction: column;
+  }
+
+  .country-details .details .detail p{
+    margin: 5px 0;
+  }
+
+  .country-details .details .detail .value{
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}

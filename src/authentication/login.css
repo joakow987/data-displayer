@@ -1,0 +1,46 @@
+@import "../index.css"; 
+
+.login-container {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid var(--light-grey-color);
+  border-radius: 10px;
+  left: calc(50% - 150px);
+  height: fit-content;
+  top: 30%;
+}
+
+.login-container section img {
+  width: 40px;
+  height: 40px;
+}
+
+.login-container section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+.login-container section span {
+  width: 70px;
+  color: black;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .login-container {
+    width: 90%;
+    left: 5%;
+    top: 80px;
+  }
+}
